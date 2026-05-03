@@ -1,16 +1,23 @@
+import Link from "next/link";
 import Github from "@/icons/Github";
 import LinkedIn from "@/icons/LinkedIn";
 import Mail from "@/icons/Mail";
 import Twitter from "@/icons/Twitter";
 
-const FOOTER_NAV = [
-  { label: "Home", href: "#", target: undefined },
-  { label: "Work", href: "#experience", target: undefined },
-  { label: "Projects", href: "#projects", target: undefined },
+const FOOTER_NAV: {
+  label: string;
+  href: string;
+  external?: boolean;
+}[] = [
+  { label: "Home", href: "/" },
+  { label: "Work", href: "/#experience" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Writing", href: "/blogs" },
+  { label: "UI library", href: "/blogs/library" },
   {
     label: "Resume",
     href: "/Software-engineer_Bidyut-Kundu.pdf",
-    target: "_blank",
+    external: true,
   },
 ];
 export default function Footer() {
@@ -38,27 +45,38 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="border-t border-stone-200 bg-stone-50">
+    <footer className="border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950">
       <div className="max-w-170 mx-auto px-6 py-9 grid grid-cols-2 gap-8">
         <div>
-          <div className="text-[11px] tracking-widest text-stone-400 mb-4">
+          <div className="text-[11px] tracking-widest text-stone-400 dark:text-stone-500 mb-4">
             Navigate
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
-            {FOOTER_NAV.map(({ label, href, target }) => (
-              <a
-                key={label}
-                href={href}
-                target={target}
-                className="text-[13px] text-stone-500 hover:text-stone-900 transition-colors"
-              >
-                {label}
-              </a>
-            ))}
+            {FOOTER_NAV.map(({ label, href, external }) =>
+              external ? (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                >
+                  {label}
+                </a>
+              ) : (
+                <Link
+                  key={label}
+                  href={href}
+                  className="text-[13px] text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
+                >
+                  {label}
+                </Link>
+              ),
+            )}
           </div>
         </div>
         <div>
-          <div className="text-[11px] tracking-widest text-stone-400 mb-4">
+          <div className="text-[11px] tracking-widest text-stone-400 dark:text-stone-500 mb-4">
             Connect
           </div>
           <div className="flex items-center gap-4">
@@ -67,7 +85,7 @@ export default function Footer() {
                 key={label}
                 href={href}
                 title={label}
-                className="text-stone-400 hover:text-stone-800 transition-colors"
+                className="text-stone-400 dark:text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 transition-colors"
               >
                 {icon}
               </a>
@@ -75,11 +93,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="max-w-170 mx-auto px-6 py-4 border-t border-stone-200 flex justify-between items-center">
-        <span className="text-[12px] text-stone-400">
+      <div className="max-w-170 mx-auto px-6 py-4 border-t border-stone-200 dark:border-stone-800 flex justify-between items-center">
+        <span className="text-[12px] text-stone-400 dark:text-stone-500">
           © 2026, Bidyut Kundu. All rights reserved.
         </span>
-        <span className="text-[12px] text-stone-400">Kolkata, India</span>
+        <span className="text-[12px] text-stone-400 dark:text-stone-500">
+          Kolkata, India
+        </span>
       </div>
     </footer>
   );

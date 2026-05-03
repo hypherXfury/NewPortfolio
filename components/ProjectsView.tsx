@@ -63,7 +63,7 @@ const columns = [
 
 const ProjectsView = () => {
   return (
-    <section id="projects" className="mb-12 flex justify-center items-center">
+    <section className="mb-12 flex justify-center items-center">
       <div className="flex flex-col md:flex-row gap-2 px-2">
         {columns.map((column, i) => (
           <div key={i} className="flex flex-col gap-2">
@@ -76,8 +76,8 @@ const ProjectsView = () => {
                 className="
                   group overflow-hidden
                   rounded-lg
-                  border border-stone-200
-                  bg-stone-100
+                  border border-stone-200 dark:border-stone-700
+                  bg-stone-100 dark:bg-stone-900/50
                 "
               >
                 <Image
@@ -94,11 +94,11 @@ const ProjectsView = () => {
 
                 <div className="flex items-center justify-between p-4">
                   <div>
-                    <p className="text-[12px] text-stone-500 mb-1">
+                    <p className="text-[12px] text-stone-500 dark:text-stone-400 mb-1">
                       {project.type}
                     </p>
 
-                    <h3 className="text-[14px] font-medium text-stone-900">
+                    <h3 className="text-[14px] font-medium text-stone-900 dark:text-stone-100">
                       {project.name}
                     </h3>
                   </div>
@@ -106,12 +106,12 @@ const ProjectsView = () => {
                   <div
                     className="
                       w-9 h-9 rounded-full
-                      border border-stone-200
+                      border border-stone-200 dark:border-stone-600
                       flex items-center justify-center
-                      bg-white
+                      bg-white dark:bg-stone-800
                     "
                   >
-                    <ArrowUpRight className="w-4 h-4 text-stone-700" />
+                    <ArrowUpRight className="w-4 h-4 text-stone-700 dark:text-stone-200" />
                   </div>
                 </div>
               </a>

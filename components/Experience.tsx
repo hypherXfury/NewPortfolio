@@ -63,8 +63,10 @@ const STACK: string[] = [
 export default function Experience() {
   return (
     <section id="experience" className="mb-12">
-      <h1 className="text-[14px] mb-3 text-stone-800">Experience</h1>
-      <div className="flex items-start justify-between gap-4 border-t border-stone-200 py-4">
+      <h1 className="text-[14px] mb-3 text-stone-800 dark:text-stone-100">
+        Experience
+      </h1>
+      <div className="flex items-start justify-between gap-4 border-t border-stone-200 dark:border-stone-700 py-4">
         <div>
           <div className="flex items-center gap-2 mb-3">
             <div className="w-4 h-4 rounded-full bg-linear-to-br from-blue-400 via-blue-400 to-green-400 flex items-center justify-center shrink-0">
@@ -72,23 +74,23 @@ export default function Experience() {
                 C
               </span>
             </div>
-            <span className="text-[14px] font-medium text-stone-800">
+            <span className="text-[14px] font-medium text-stone-800 dark:text-stone-100">
               Conas Consulting Private Ltd.
             </span>
             <span className="inline-flex items-center gap-1.5 bg-green-100 rounded-full p-1 animate-pulse">
               <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />
             </span>
           </div>
-          <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-3">
+          <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
             <At />
             <span>Software Engineer</span>
           </div>
           <div className="flex flex-col md:flex-row justify-center md:items-center gap-2.5">
-            <div className="flex items-center gap-2.5 text-[14px] text-stone-400">
+            <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500">
               <Calender />
               <span>April 2023 – Present ( 3+ YOE )</span>
             </div>
-            <div className="flex items-center gap-2.5 text-[14px] text-stone-400">
+            <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500">
               <Map />
               <span>Pune, India (On-Site)</span>
             </div>
@@ -96,7 +98,7 @@ export default function Experience() {
         </div>
       </div>
       <div>
-        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-4">
+        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-4">
           <Terminal />
           <span>Tools I work with</span>
         </div>
@@ -104,13 +106,13 @@ export default function Experience() {
           {STACK.map((s) => (
             <span
               key={s}
-              className="text-[12px] font-mono text-stone-500 bg-white border border-stone-200 rounded-lg px-2.5 py-1"
+              className="text-[12px] font-mono text-stone-500 dark:text-stone-400 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-lg px-2.5 py-1"
             >
               {s}
             </span>
           ))}
         </div>
-        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mt-4">
+        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mt-4">
           <Pen />
           <span>What I&lsquo;ve done</span>
         </div>
@@ -118,13 +120,17 @@ export default function Experience() {
           <div
             key={i}
             className={`py-3.5 ml-4 ${
-              i < ACHIEVEMENTS.length - 1 ? "border-b border-stone-100" : ""
+              i < ACHIEVEMENTS.length - 1
+                ? "border-b border-stone-100 dark:border-stone-800"
+                : ""
             }`}
           >
             <ul className="list-disc pl-4">
-              <li className="text-[13.5px] text-stone-800 leading-[1.7]">
+              <li className="text-[13.5px] text-stone-800 dark:text-stone-200 leading-[1.7]">
                 <span className="font-medium">{ach.title}:</span>{" "}
-                <span className="text-stone-500">{ach.desc}</span>
+                <span className="text-stone-500 dark:text-stone-400">
+                  {ach.desc}
+                </span>
               </li>
             </ul>
           </div>

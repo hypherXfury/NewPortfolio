@@ -22,7 +22,7 @@ function CopyEmailButton({ email }: { email: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="text-stone-400 hover:text-stone-700 transition-colors cursor-pointer"
+      className="text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors cursor-pointer"
       title="Copy email"
     >
       {copied ? <Check className="text-green-600" /> : <Copy />}
@@ -58,30 +58,32 @@ export default function Hero() {
           <Image src={bidyut} alt="Bidyut" className="rounded-full" />
         </div>
         <div>
-          <h1 className="text-[14px] text-stone-800">Bidyut Kundu</h1>
-          <span className="text-[14px] text-stone-500">
+          <h1 className="text-[14px] text-stone-800 dark:text-stone-100">
+            Bidyut Kundu
+          </h1>
+          <span className="text-[14px] text-stone-500 dark:text-stone-400">
             Software Engineer ( Open To Work )
           </span>
-          <p className="text-[14px] font-serif italic text-stone-400 leading-relaxed">
+          <p className="text-[14px] font-serif italic text-stone-400 dark:text-stone-500 leading-relaxed">
             &ldquo;The best systems are the ones you don&lsquo;t notice — they
             just work, quietly, at any scale.&ldquo;
           </p>
         </div>
       </div>
 
-      <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-3">
+      <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
         <Clock />
         <span>{time}</span>
       </div>
-      <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-3">
+      <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
         <Map />
         <span>Kolkata, India</span>
       </div>
-      <div className="flex items-center gap-2.5 text-[14px] text-stone-400 flex-wrap mb-3">
+      <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 flex-wrap mb-3">
         <Mail />
         <a
           href="mailto:bidyut.kundu.dev@gmail.com"
-          className="hover:text-stone-800 transition-colors"
+          className="hover:text-stone-800 dark:hover:text-stone-200 transition-colors"
         >
           bidyut.kundu.dev@gmail.com
         </a>
@@ -89,41 +91,41 @@ export default function Hero() {
       </div>
 
       <div className="flex items-center gap-4">
-        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-3">
+        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
           <Twitter />
           <a
             href="https://x.com/BidyutKundu12"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-stone-800 transition-colors cursor-pointer"
+            className="underline hover:text-stone-800 dark:hover:text-stone-200 transition-colors cursor-pointer"
           >
             Twitter/X
           </a>
         </div>
-        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-3">
+        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
           <Github />
           <a
             href="https://github.com/bidyut10"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-stone-800 transition-colors cursor-pointer"
+            className="underline hover:text-stone-800 dark:hover:text-stone-200 transition-colors cursor-pointer"
           >
             Github
           </a>
         </div>
-        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-3">
+        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
           <LinkedIn />
           <a
             href="https://www.linkedin.com/in/bidyut-kundu-4ba406242"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-stone-800 transition-colors cursor-pointer"
+            className="underline hover:text-stone-800 dark:hover:text-stone-200 transition-colors cursor-pointer"
           >
             LinkedIn
           </a>
         </div>
-        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 mb-3">
-          <div className="w-3 h-3 rounded-full bg-stone-400 flex items-center justify-center shrink-0">
+        <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
+          <div className="w-3 h-3 rounded-full bg-stone-400 dark:bg-stone-600 flex items-center justify-center shrink-0">
             <span className="text-[9px] font-medium text-white tracking-tight">
               P
             </span>
@@ -132,7 +134,7 @@ export default function Hero() {
             href="https://www.producthunt.com/@bidyut_kundu"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-stone-800 transition-colors cursor-pointer"
+            className="underline hover:text-stone-800 dark:hover:text-stone-200 transition-colors cursor-pointer"
           >
             ProductHunt
           </a>
