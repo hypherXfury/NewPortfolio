@@ -12,8 +12,7 @@ const FOOTER_NAV: {
   { label: "Home", href: "/" },
   { label: "Work", href: "/#experience" },
   { label: "Projects", href: "/#projects" },
-  { label: "Writing", href: "/blogs" },
-  { label: "UI library", href: "/blogs/library" },
+  { label: "Components", href: "/blogs" },
   {
     label: "Resume",
     href: "/Software-engineer_Bidyut-Kundu.pdf",

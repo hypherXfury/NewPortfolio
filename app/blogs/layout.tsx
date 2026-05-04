@@ -9,7 +9,7 @@ export default function BlogsLayout({
   return (
     <div className="min-h-screen bg-stone-50/50 dark:bg-stone-950 dark:text-stone-100 font-cormorant flex flex-col">
       <Navbar />
-      <div className="flex-1 max-w-170 mx-auto px-6 w-full pt-10 pb-16">
+      <div className="min-w-0 flex-1 w-full max-w-none overflow-x-hidden px-2 pt-10 pb-16 sm:px-3 md:px-4">
         {children}
       </div>
       <Footer />

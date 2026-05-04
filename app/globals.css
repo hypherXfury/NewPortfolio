@@ -46,3 +46,61 @@ body {
 nextjs-portal {
   display: none !important;
 }
+
+/*
+ * Full-width Pinterest-style masonry for /blogs gallery.
+ * Flex children default to min-width:auto (min-content), which collapses
+ * multi-column layout to a single narrow column — min-w-0 on the parent fixes that.
+ */
+.ui-masonry {
+  width: 100%;
+  min-width: 0;
+  column-gap: 0.75rem;
+  column-fill: auto;
+}
+
+@media (max-width: 479.98px) {
+  .ui-masonry {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 480px) {
+  .ui-masonry {
+    column-width: 14rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ui-masonry {
+    column-width: 15rem;
+    column-gap: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ui-masonry {
+    column-width: 16rem;
+    column-gap: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ui-masonry {
+    column-width: 17rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .ui-masonry {
+    column-width: 18rem;
+  }
+}
+
+.ui-masonry > * {
+  display: block;
+  width: 100%;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 0.75rem;
+}

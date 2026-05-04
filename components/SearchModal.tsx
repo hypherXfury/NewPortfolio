@@ -7,7 +7,7 @@ import House from "@/icons/House";
 import Work from "@/icons/Work";
 import Terminal from "@/icons/Terminal";
 import File from "@/icons/File";
-import { BookOpen, LayoutDashboard } from "lucide-react";
+import { LayoutDashboard } from "lucide-react";
 
 const NAV_ITEMS: {
   icon: React.ComponentType<{ className?: string }>;
@@ -18,8 +18,7 @@ const NAV_ITEMS: {
   { icon: House, label: "Home", href: "/" },
   { icon: Work, label: "Work", href: "/#experience" },
   { icon: Terminal, label: "Projects", href: "/#projects" },
-  { icon: BookOpen, label: "Writing", href: "/blogs" },
-  { icon: LayoutDashboard, label: "UI library", href: "/blogs/library" },
+  { icon: LayoutDashboard, label: "Components", href: "/blogs" },
   {
     icon: File,
     label: "Resume",

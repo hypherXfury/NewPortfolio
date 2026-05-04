@@ -13,9 +13,9 @@ const NAV_LINKS: {
   external?: boolean;
 }[] = [
   { label: "Home", href: "/" },
-  { label: "Work", href: "/#experience" },
+  // { label: "Work", href: "/#experience" },
   { label: "Projects", href: "/#projects" },
-  { label: "Writing", href: "/blogs" },
+  { label: "Components", href: "/blogs" },
   {
     label: "Resume",
     href: "/Software-engineer_Bidyut-Kundu.pdf",
@@ -71,7 +71,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="flex items-center gap-2 text-[13px] text-stone-400 dark:text-stone-500 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-full px-1.5 md:px-3 py-1.5 cursor-pointer hover:border-stone-300 dark:hover:border-stone-600 transition-colors"
+              className="flex items-center gap-2 text-[13px] text-stone-400 dark:text-stone-500 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-full px-2 py-2 md:px-3 md:py-1.5 cursor-pointer hover:border-stone-300 dark:hover:border-stone-600 transition-colors"
             >
               <Search />
               <div className="hidden md:flex items-center">
@@ -88,7 +88,7 @@ export default function Navbar() {
               onClick={toggleTheme}
               aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
               title={isDark ? "Light theme" : "Dark theme"}
-              className="flex items-center justify-center w-9 h-9 text-stone-500 dark:text-stone-400 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-full cursor-pointer hover:border-stone-300 dark:hover:border-stone-600 transition-colors"
+              className="flex items-center justify-center w-8 h-8 text-stone-500 dark:text-stone-400 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-full cursor-pointer hover:border-stone-300 dark:hover:border-stone-600 transition-colors"
             >
               {isDark ? <Sun className="text-amber-500" /> : <Moon />}
             </button>
