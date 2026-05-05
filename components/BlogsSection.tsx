@@ -15,7 +15,10 @@ export default function BlogsSection() {
   const featured = featuredEntries();
 
   return (
-    <section id="components" className="mb-12 max-w-170 mx-auto px-6">
+    <section
+      id="components"
+      className="mb-12 max-w-170 mx-auto px-6 bg-white dark:bg-stone-950"
+    >
       <h1 className="text-[14px] mb-3 text-stone-800 dark:text-stone-100">
         Component library
       </h1>

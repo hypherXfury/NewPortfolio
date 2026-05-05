@@ -34,13 +34,13 @@ export default function ComponentGalleryGrid({
   entries: readonly UIRegistryEntry[];
 }) {
   return (
-    <section className="mb-12 w-full min-w-0">
+    <section className="mb-12 w-full min-w-0 bg-white dark:bg-stone-950">
       <div className="grid w-full grid-cols-1 md:grid-cols-3 grid-rows-[repeat(auto-fill,minmax(220px,auto))] gap-3">
         {entries.map((entry, i) => (
           <Link
             key={entry.slug}
             href={`/blogs/${entry.slug}`}
-            className={`${bentoRowSpan[i % bentoRowSpan.length]} group flex flex-col overflow-hidden rounded-xl border border-stone-100/90 bg-white/10 shadow-sm transition-[box-shadow,transform,border-color] duration-300 hover:-translate-y-0.5 hover:border-stone-300 hover:shadow-lg dark:border-stone-700/90 dark:bg-stone-900/60 dark:hover:border-stone-600 dark:hover:shadow-black/40`}
+            className={`${bentoRowSpan[i % bentoRowSpan.length]} group flex flex-col overflow-hidden rounded-xl border border-stone-100/90 bg-white/10 shadow-sm transition-[box-shadow,transform,border-color] duration-300 hover:-translate-y-0.5 hover:border-stone-300 hover:shadow-lg dark:border-stone-700/90 dark:bg-stone-900 dark:hover:border-stone-600 dark:hover:shadow-black/40`}
           >
             <div className="min-h-0 flex-1">
               <ComponentPreviewThumb
@@ -49,7 +49,7 @@ export default function ComponentGalleryGrid({
                 masonrySize={masonrySizeFromSlug(entry.slug)}
               />
             </div>
-            <div className="flex items-start justify-between gap-3 p-3.5 sm:p-4">
+            <div className="flex items-start bg-white dark:bg-stone-950 justify-between gap-3 p-3.5 sm:p-4">
               <div className="min-w-0 flex-1">
                 <p className="mb-0.5 text-[11px] font-medium uppercase tracking-wide text-stone-400 dark:text-stone-500">
                   {entry.category}
