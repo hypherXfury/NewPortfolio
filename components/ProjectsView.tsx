@@ -76,7 +76,7 @@ const ProjectsView = () => {
                 className="
                   group overflow-hidden
                   rounded-lg
-                  border border-stone-200 dark:border-stone-700
+                  border border-stone-100 dark:border-stone-700
                   bg-stone-100 dark:bg-stone-900/50
                 "
               >
@@ -106,7 +106,7 @@ const ProjectsView = () => {
                   <div
                     className="
                       w-9 h-9 rounded-full
-                      border border-stone-200 dark:border-stone-600
+                      border border-stone-100 dark:border-stone-600
                       flex items-center justify-center
                       bg-white dark:bg-stone-800
                     "

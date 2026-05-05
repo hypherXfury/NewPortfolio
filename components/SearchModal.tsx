@@ -87,8 +87,8 @@ export default function SearchModal({ open, onClose }: Props) {
       className="fixed inset-0 z-100 bg-black/40 flex items-start justify-center pt-20 px-4"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="bg-white dark:bg-stone-900 rounded-2xl w-full max-w-145 overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-150 border border-stone-200 dark:border-stone-700">
-        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-stone-200 dark:border-stone-700">
+      <div className="bg-white dark:bg-stone-900 rounded-2xl w-full max-w-145 overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-150 border border-stone-100 dark:border-stone-700">
+        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-stone-100 dark:border-stone-700">
           <Search className="text-stone-400 dark:text-stone-500 shrink-0" />
 
           <input
@@ -106,7 +106,7 @@ export default function SearchModal({ open, onClose }: Props) {
 
           <kbd
             onClick={onClose}
-            className="text-[10px] font-mono bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-600 rounded px-1.5 py-0.5 text-stone-500 dark:text-stone-400 cursor-pointer"
+            className="text-[10px] font-mono bg-stone-100 dark:bg-stone-800 border border-stone-100 dark:border-stone-600 rounded px-1.5 py-0.5 text-stone-500 dark:text-stone-400 cursor-pointer"
           >
             Esc
           </kbd>
@@ -164,7 +164,7 @@ export default function SearchModal({ open, onClose }: Props) {
           })}
         </div>
 
-        <div className="border-t border-stone-200 dark:border-stone-700 px-4 py-2.5 flex gap-4">
+        <div className="border-t border-stone-100 dark:border-stone-700 px-4 py-2.5 flex gap-4">
           {[
             ["↑↓", "navigate"],
             ["↵", "select"],
@@ -174,7 +174,7 @@ export default function SearchModal({ open, onClose }: Props) {
               key={key}
               className="flex items-center gap-1.5 text-[11px] text-stone-400 dark:text-stone-500"
             >
-              <kbd className="font-mono bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-600 rounded px-1 py-0.5 text-stone-500 dark:text-stone-400">
+              <kbd className="font-mono bg-stone-100 dark:bg-stone-800 border border-stone-100 dark:border-stone-600 rounded px-1 py-0.5 text-stone-500 dark:text-stone-400">
                 {key}
               </kbd>
               {desc}

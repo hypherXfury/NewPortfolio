@@ -55,11 +55,11 @@ export default function ComponentPreviewThumb({
   return (
     <div
       ref={rootRef}
-      className={`relative w-full overflow-hidden bg-stone-50/50 dark:from-stone-900 dark:to-stone-950/90 ${h}`}
+      className={`relative w-full overflow-hidden bg-white dark:bg-stone-950 ${h}`}
     >
       {!visible ? (
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="h-10 w-32 rounded-md bg-stone-200/80 dark:bg-stone-700/80 animate-pulse" />
+          <div className="h-10 w-32 rounded-md bg-stone-50 dark:bg-stone-700/80 animate-pulse" />
         </div>
       ) : (
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden">

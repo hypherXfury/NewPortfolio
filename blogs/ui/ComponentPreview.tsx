@@ -62,7 +62,7 @@ import { ProfileSkeleton } from "@/blogs/components/skeletons/ProfileSkeleton";
 import { Tabs } from "@/blogs/components/tabs/Tabs";
 
 const wrap = "flex justify-center items-center p-6 min-h-[100px] w-full";
-const bgWrap = "w-full max-w-lg max-h-56 overflow-hidden rounded-lg border border-stone-200 dark:border-stone-700 mx-auto";
+const bgWrap = "w-full max-w-lg max-h-56 overflow-hidden rounded-lg border border-stone-100 dark:border-stone-700 mx-auto";
 
 export function ComponentPreview({ slug }: { slug: string }) {
   switch (slug) {

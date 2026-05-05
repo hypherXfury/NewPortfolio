@@ -9,6 +9,7 @@ import Mail from "@/icons/Mail";
 import Twitter from "@/icons/Twitter";
 import Github from "@/icons/Github";
 import LinkedIn from "@/icons/LinkedIn";
+import File from "@/icons/File";
 
 function CopyEmailButton({ email }: { email: string }) {
   const [copied, setCopied] = useState(false);
@@ -125,18 +126,19 @@ export default function Hero() {
           </a>
         </div>
         <div className="flex items-center gap-2.5 text-[14px] text-stone-400 dark:text-stone-500 mb-3">
-          <div className="w-3 h-3 rounded-full bg-stone-400 dark:bg-stone-600 flex items-center justify-center shrink-0">
+          {/* <div className="w-3 h-3 rounded-full bg-stone-400 dark:bg-stone-600 flex items-center justify-center shrink-0">
             <span className="text-[9px] font-medium text-white tracking-tight">
-              P
+              R
             </span>
-          </div>
+          </div> */}
+          <File/>
           <a
-            href="https://www.producthunt.com/@bidyut_kundu"
+            href="/Software-engineer_Bidyut-Kundu.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-stone-800 dark:hover:text-stone-200 transition-colors cursor-pointer"
           >
-            ProductHunt
+            Resume
           </a>
         </div>
       </div>

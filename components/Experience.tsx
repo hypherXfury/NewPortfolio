@@ -66,7 +66,7 @@ export default function Experience() {
       <h1 className="text-[14px] mb-3 text-stone-800 dark:text-stone-100">
         Experience
       </h1>
-      <div className="flex items-start justify-between gap-4 border-t border-stone-200 dark:border-stone-700 py-4">
+      <div className="flex items-start justify-between gap-4 border-t border-stone-100 dark:border-stone-700 py-4">
         <div>
           <div className="flex items-center gap-2 mb-3">
             <div className="w-4 h-4 rounded-full bg-linear-to-br from-blue-400 via-blue-400 to-green-400 flex items-center justify-center shrink-0">
@@ -106,7 +106,7 @@ export default function Experience() {
           {STACK.map((s) => (
             <span
               key={s}
-              className="text-[12px] font-mono text-stone-500 dark:text-stone-400 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-lg px-2.5 py-1"
+              className="text-[12px] font-mono text-stone-500 dark:text-stone-400 bg-white dark:bg-stone-900 border border-stone-100 dark:border-stone-700 rounded-lg px-2.5 py-1"
             >
               {s}
             </span>

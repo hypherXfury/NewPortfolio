@@ -44,7 +44,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="border-t border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-950">
+    <footer className="border-t border-stone-100 dark:border-stone-800 bg-white dark:bg-stone-950">
       <div className="max-w-170 mx-auto px-6 py-9 grid grid-cols-2 gap-8">
         <div>
           <div className="text-[11px] tracking-widest text-stone-400 dark:text-stone-500 mb-4">
@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="max-w-170 mx-auto px-6 py-4 border-t border-stone-200 dark:border-stone-800 flex justify-between items-center">
+      <div className="max-w-170 mx-auto px-6 py-4 border-t border-stone-100 dark:border-stone-800 flex justify-between items-center">
         <span className="text-[12px] text-stone-400 dark:text-stone-500">
           © 2026, Bidyut Kundu. All rights reserved.
         </span>

@@ -10,7 +10,7 @@ export default function BlogSubnav({
   title?: string;
 }) {
   return (
-    <header className="border-b border-stone-200 dark:border-stone-700 pb-3 mb-3">
+    <header className="border-b border-stone-100 dark:border-stone-700 pb-3 mb-3">
       <nav className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] text-stone-400 dark:text-stone-500 mb-3">
         {crumbs.map((c, i) => (
           <span key={c.href} className="flex items-center gap-2">

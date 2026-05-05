@@ -35,12 +35,12 @@ export default function ComponentGalleryGrid({
 }) {
   return (
     <section className="mb-12 w-full min-w-0">
-      <div className="grid w-full grid-cols-3 grid-rows-[repeat(auto-fill,minmax(220px,auto))] gap-3">
+      <div className="grid w-full grid-cols-1 md:grid-cols-3 grid-rows-[repeat(auto-fill,minmax(220px,auto))] gap-3">
         {entries.map((entry, i) => (
           <Link
             key={entry.slug}
             href={`/blogs/${entry.slug}`}
-            className={`${bentoRowSpan[i % bentoRowSpan.length]} group flex flex-col overflow-hidden rounded-xl border border-stone-200/90 bg-stone-50/50 shadow-sm transition-[box-shadow,transform,border-color] duration-300 hover:-translate-y-0.5 hover:border-stone-300 hover:shadow-lg dark:border-stone-700/90 dark:bg-stone-900/60 dark:hover:border-stone-600 dark:hover:shadow-black/40`}
+            className={`${bentoRowSpan[i % bentoRowSpan.length]} group flex flex-col overflow-hidden rounded-xl border border-stone-100/90 bg-white/10 shadow-sm transition-[box-shadow,transform,border-color] duration-300 hover:-translate-y-0.5 hover:border-stone-300 hover:shadow-lg dark:border-stone-700/90 dark:bg-stone-900/60 dark:hover:border-stone-600 dark:hover:shadow-black/40`}
           >
             <div className="min-h-0 flex-1">
               <ComponentPreviewThumb
@@ -61,7 +61,7 @@ export default function ComponentGalleryGrid({
                   {entry.description}
                 </p>
               </div>
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-stone-200/80 bg-white/90 dark:border-stone-600 dark:bg-stone-800/90 sm:h-9 sm:w-9">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-stone-100/80 bg-white/90 dark:border-stone-600 dark:bg-stone-800/90 sm:h-9 sm:w-9">
                 <ArrowUpRight className="h-3.5 w-3.5 text-stone-600 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:text-stone-300 sm:h-4 sm:w-4" />
               </div>
             </div>

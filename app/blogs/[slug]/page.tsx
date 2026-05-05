@@ -59,19 +59,19 @@ export default async function ComponentDetailPage({ params }: Props) {
       <div className="mb-8 flex flex-wrap gap-2">
         <Link
           href="/blogs"
-          className="rounded-full border border-stone-200 bg-white px-3 py-1 text-[12px] text-stone-500 transition-colors hover:text-stone-900 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
+          className="rounded-full border border-stone-100 bg-white px-3 py-1 text-[12px] text-stone-500 transition-colors hover:text-stone-900 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
         >
           ← All components
         </Link>
         <Link
           href="/#components"
-          className="rounded-full border border-stone-200 bg-white px-3 py-1 text-[12px] text-stone-500 transition-colors hover:text-stone-900 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
+          className="rounded-full border border-stone-100 bg-white px-3 py-1 text-[12px] text-stone-500 transition-colors hover:text-stone-900 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
         >
           Homepage picks
         </Link>
         <Link
           href="/"
-          className="rounded-full border border-stone-200 bg-white px-3 py-1 text-[12px] text-stone-500 transition-colors hover:text-stone-900 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
+          className="rounded-full border border-stone-100 bg-white px-3 py-1 text-[12px] text-stone-500 transition-colors hover:text-stone-900 dark:border-stone-600 dark:bg-stone-900 dark:text-stone-400 dark:hover:text-stone-100"
         >
           Portfolio home
         </Link>
@@ -100,11 +100,11 @@ export default async function ComponentDetailPage({ params }: Props) {
       <h2 className="mb-2 text-[12px] font-medium text-stone-800 dark:text-stone-200">
         Source
       </h2>
-      <pre className="max-h-[min(70vh,560px)] overflow-y-auto overflow-x-auto rounded-lg border border-stone-200 bg-stone-100 p-4 font-mono text-[11px] leading-relaxed text-stone-700 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300">
+      <pre className="max-h-[min(70vh,560px)] overflow-y-auto overflow-x-auto rounded-lg border border-stone-100 bg-stone-100 p-4 font-mono text-[11px] leading-relaxed text-stone-700 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300">
         {source}
       </pre>
 
-      <nav className="mt-14 flex flex-col gap-4 border-t border-stone-200 pt-8 text-[13px] dark:border-stone-700 sm:flex-row sm:justify-between">
+      <nav className="mt-14 flex flex-col gap-4 border-t border-stone-100 pt-8 text-[13px] dark:border-stone-700 sm:flex-row sm:justify-between">
         <div>
           {prev ? (
             <Link
