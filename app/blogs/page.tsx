@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ComponentsGalleryPage() {
   return (
     <>
-      <div className="mx-auto mb-8 max-w-170 px-4 sm:px-2">
+      <div className="mx-auto bg-white dark:bg-stone-950 mb-8 max-w-170 px-4 sm:px-2">
         <BlogSubnav
           crumbs={[
             { label: "Home", href: "/" },
