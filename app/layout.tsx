@@ -17,9 +17,37 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://bidyut-kundu.vercel.app";
+const siteTitle = "Bidyut Kundu";
+const siteDescription =
+  "Software Engineer building products across the stack. Creator of Opensource UI. Open to work.";
+
 export const metadata: Metadata = {
-  title: "Bidyut Kundu",
-  description: "Full software developer",
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: siteTitle,
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og-banner.webp",
+        width: 1200,
+        height: 630,
+        alt: "Bidyut Kundu — Software Engineer portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/og-banner.webp"],
+  },
 };
 
 export default function RootLayout({

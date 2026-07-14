@@ -36,7 +36,7 @@ export default function Hero() {
 
   return (
     <Section id="home">
-      <div className="flex items-center justify-start gap-4">
+      <div className="flex items-center justify-start gap-4 mt-12">
         <div className="group relative shrink-0">
           <Image
             src="/profile-pict.webp"
