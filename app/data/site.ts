@@ -8,7 +8,7 @@ export const site = {
   timeZoneLabel: "IST",
   openToWork: true,
   resume: "/Vaibhav_Shrivastava_Resume.pdf",
-  url: "https://vaibhav-portfolio-delta-navy.vercel.app",
+  url: "https://vaibhavxdev.vercel.app",
   intro: [
     "I build real-time 3D tools and games in Unity and C#, from runtime mesh deformation systems to gameplay mechanics that hold a stable frame rate.",
     "Right now I'm engineering patient-specific anatomical visualization at GameEon Studios, and finishing a B.Tech in Computer Science at LNCT Bhopal.",

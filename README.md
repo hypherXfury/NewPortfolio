@@ -2,7 +2,7 @@
 
 Personal portfolio site. Unity developer, B.Tech CS (LNCT Bhopal, 2026).
 
-**Live:** https://vaibhav-portfolio-delta-navy.vercel.app
+**Live:** https://vaibhavxdev.vercel.app
 
 ## Stack
 

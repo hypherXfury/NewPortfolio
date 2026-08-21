@@ -10,7 +10,7 @@ const studies: Study[] = [
     id: "btech",
     qualification: "B.Tech, Computer Science",
     institution: "LNCT College, Bhopal",
-    meta: "08.2022—06.2026 · GPA 7.75/10",
+    meta: "08.2022—06.2026 · GPA 7.88/10",
   },
   {
     id: "isc",

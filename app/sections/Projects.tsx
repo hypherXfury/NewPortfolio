@@ -6,6 +6,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 import { TechPill } from "@/app/components/TechPill";
 import { SquareGithubIcon } from "@/icons/brands/Github";
+import { SiItchdotio } from "react-icons/si";
 
 type Project = {
   id: string;
@@ -35,6 +36,10 @@ const groups: Group[] = [
         description:
           "A 2D platformer inspired by Unfair Mario, built around unexpected traps, challenging level design, and unpredictable mechanics. Implements AI-driven enemies, health and stamina systems, and customizable player abilities, with performance tuned across scenes and devices for stable frame rates and efficient memory usage.",
         skills: ["C#", "Unity"],
+        demo: {
+          label: "vaibhavxfury.itch.io/lost-kingdom",
+          href: "https://vaibhavxfury.itch.io/lost-kingdom",
+        },
       },
       {
         id: "save-us",
@@ -43,6 +48,10 @@ const groups: Group[] = [
         description:
           "A fast, simple arcade game where the player rescues tiny creatures. Pixel art assets and animations were created from scratch and wired into Unity's animation system for smooth gameplay visuals.",
         skills: ["C#", "Unity"],
+        demo: {
+          label: "vaibhavxfury.itch.io/save-us",
+          href: "https://vaibhavxfury.itch.io/save-us",
+        },
       },
     ],
   },
@@ -93,6 +102,7 @@ function ProjectBlock({ project, index }: { project: Project; index: number }) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 underline decoration-neutral-300 underline-offset-4"
                 >
+                  <SiItchdotio className="size-4" style={{ color: "#fa5c5c" }} />
                   {project.demo.label}
                 </Link>
               )}

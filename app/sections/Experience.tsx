@@ -32,7 +32,7 @@ const companies: Company[] = [
     roles: [
       {
         id: "unity-developer",
-        title: "Unity Developer",
+        title: "Jr. Unity Developer",
         meta: "02.2026—Present · Remote",
         highlights: [
           "Built a data-driven 3D uterine anatomy viewer in Unity that instantiates and positions medical abnormalities (fibroids, adenomyomas, polyps) in real-world anatomical coordinates using CellSize-based coordinate conversion.",

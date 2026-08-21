@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://vaibhav-portfolio-delta-navy.vercel.app";
+const siteUrl = "https://vaibhavxdev.vercel.app";
 const siteTitle = "Vaibhav Shrivastava";
 const siteDescription =
   "Unity Developer & Game Programmer building real-time 3D tools and games with C# and .NET.";
