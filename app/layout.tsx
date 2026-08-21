@@ -33,11 +33,20 @@ export const metadata: Metadata = {
     siteName: siteTitle,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-banner.webp",
+        width: 1200,
+        height: 630,
+        alt: "Vaibhav Shrivastava — Unity Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
+    images: ["/og-banner.webp"],
   },
 };
 

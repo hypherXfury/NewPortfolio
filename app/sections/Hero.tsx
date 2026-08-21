@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Monogram } from "@/app/components/Monogram";
+import { Avatar } from "@/app/components/Avatar";
 import { site } from "@/app/data/site";
 
 export default function Hero() {
@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="home" className="scroll-mt-24 pt-16 sm:pt-28">
       <div className="flex items-center gap-4 sm:gap-6">
         <div className="relative shrink-0">
-          <Monogram className="size-20 rounded-md text-2xl sm:size-24 sm:text-3xl" />
+          <Avatar className="size-20 sm:size-24" rounded="rounded-md" priority />
           <Image
             src="/waving-hand.webp"
             alt=""

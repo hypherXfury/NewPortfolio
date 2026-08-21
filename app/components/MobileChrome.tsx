@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Monogram } from "@/app/components/Monogram";
+import { Avatar } from "@/app/components/Avatar";
 import { SquareGithubIcon } from "@/icons/brands/Github";
 import { LinkedinIcon } from "@/icons/brands/LinkedIn";
 import { GmailIcon } from "@/icons/brands/Gmail";
@@ -16,7 +16,7 @@ export function MobileHeader() {
     <header className="sticky top-0 z-40 border-b border-dashed border-neutral-200 bg-white/95 px-4 backdrop-blur lg:hidden">
       <div className="flex h-16 items-center justify-between">
         <Link href="#home" aria-label="Home" className="rounded-full">
-          <Monogram className="size-10 text-sm" />
+          <Avatar className="size-10" />
         </Link>
         {site.openToWork && (
           <span className="inline-flex items-center gap-2 text-xs text-neutral-600">

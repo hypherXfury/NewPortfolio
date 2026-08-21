@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Monogram } from "@/app/components/Monogram";
+import { Avatar } from "@/app/components/Avatar";
 import { CopyEmailLink } from "@/app/components/CopyEmailLink";
 import { SocialLinks } from "@/app/components/SocialLinks";
 import { navItems } from "@/app/data/site";
@@ -13,7 +13,7 @@ export function LeftSidebar() {
         aria-label="Vaibhav Shrivastava — home"
         className="w-fit rounded-full focus-visible:outline-2 focus-visible:outline-blue-500"
       >
-        <Monogram className="size-14 text-lg" />
+        <Avatar className="size-14" priority />
       </Link>
 
       <nav aria-label="Portfolio sections" className="mt-12 flex flex-col">
