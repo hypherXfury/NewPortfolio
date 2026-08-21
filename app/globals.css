@@ -2,6 +2,14 @@
 
 html {
   scroll-behavior: smooth;
+  /* Pin the site to light mode: stops browser/OS auto-darkening and keeps
+     form controls, scrollbars, and system UI light. */
+  color-scheme: light;
+}
+
+body {
+  color: #171717;
+  background: #ffffff;
 }
 
 @theme {
