@@ -46,6 +46,41 @@ html {
   }
 }
 
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-block {
+  margin-top: 7rem;
+}
+
+@media (min-width: 640px) {
+  .section-block {
+    margin-top: 9rem;
+  }
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #525252;
+  background: #fafafad1;
+  border: 1px solid #e5e5e5;
+  border-radius: 9999px;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

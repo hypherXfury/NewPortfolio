@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://bidyut-kundu.vercel.app";
-const siteTitle = "Bidyut Kundu";
+const siteUrl = "https://vaibhav-portfolio-delta-navy.vercel.app";
+const siteTitle = "Vaibhav Shrivastava";
 const siteDescription =
-  "Software Engineer building products across the stack. Creator of Opensource UI. Open to work.";
+  "Unity Developer & Game Programmer building real-time 3D tools and games with C# and .NET.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -33,20 +33,11 @@ export const metadata: Metadata = {
     siteName: siteTitle,
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/og-banner.webp",
-        width: 1200,
-        height: 630,
-        alt: "Bidyut Kundu — Software Engineer portfolio",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/og-banner.webp"],
   },
 };
 

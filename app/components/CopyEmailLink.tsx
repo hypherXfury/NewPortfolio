@@ -1,18 +1,17 @@
 "use client";
 
 import { useState } from "react";
-
-import { GmailIcon } from "@/icons/brands/Gmail";
 import { Check } from "lucide-react";
 
-const EMAIL = "bidyut.kundu.dev@gmail.com";
+import { GmailIcon } from "@/icons/brands/Gmail";
+import { site } from "@/app/data/site";
 
-export function CopyEmailLink() {
+export function CopyEmailLink({ className = "" }: { className?: string }) {
   const [copied, setCopied] = useState(false);
 
   async function handleCopy() {
     try {
-      await navigator.clipboard.writeText(EMAIL);
+      await navigator.clipboard.writeText(site.email);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1600);
     } catch {
@@ -21,22 +20,18 @@ export function CopyEmailLink() {
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-      <span className="text-sm font-normal text-neutral-400">Get in touch</span>
-      <button
-        type="button"
-        onClick={handleCopy}
-        className="inline-flex cursor-pointer items-center gap-2 bg-transparent p-0 text-sm font-medium text-neutral-600 transition-colors hover:text-neutral-900"
-        aria-label={copied ? "Email copied" : `Copy ${EMAIL}`}
-      >
+    <button
+      type="button"
+      onClick={handleCopy}
+      className={`group inline-flex max-w-full items-center gap-2 text-left text-sm text-neutral-700 transition-colors hover:text-neutral-950 ${className}`}
+      aria-label={copied ? "Email copied" : `Copy ${site.email}`}
+    >
+      {copied ? (
+        <Check className="size-4 shrink-0 text-emerald-500" />
+      ) : (
         <GmailIcon className="size-4 shrink-0" />
-        <span className="underline decoration-neutral-300 underline-offset-4">
-          {EMAIL}
-        </span>
-        <span className="font-normal text-xs text-neutral-400">
-          {copied ? <div className="flex items-center gap-2 text-xs font-normal animate-pulse">copied<Check className="size-4 text-green-400" /></div> : ""}
-        </span>
-      </button>
-    </div>
+      )}
+      <span className="truncate">{copied ? "copied" : site.email}</span>
+    </button>
   );
 }
